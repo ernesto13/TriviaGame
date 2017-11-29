@@ -1,0 +1,43 @@
+body {
+    height: 100%;
+    background: gray;
+    background-image: url("../images/usFlag.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*
+.jumbotron-fluid {
+    width: 75%;
+}*/
+
+.jumbotron {
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 75%;
+}
+
+#done {
+    width: 150px;
+}
+
+#start {
+    width: 200px;
+    height: 60px;
+    text-align: center!important;
+    display: block;
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+ul {
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.card {
+    margin: 50px;
+    position: relative;
+}

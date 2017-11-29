@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>History|Ernesto</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3 text-center">History Check!</h1>
+            <button id="start" class="btn btn-primary mx-auto center">Start Quiz</button>
+            <p class="lead text-center">You have 60 seconds to answer the questions</p>
+            <!--=======jumbotron for answers=======-->
+
+            <div id="jumboAnswers" class="jumbotron">
+                <h1 class="display-3">Conclusion!</h1>
+                <ul class="text-left">
+                    <li id="correct">Correct: </li>
+                    <li id="incorrect">Incorrect: </li>
+                    <li id="unanswered">Unanswered: </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <div class="card-header">
+
+                <h1 id="timer" class="card-title"></h1>
+            </div>
+
+            <div id="card-body" class="card-body">
+
+                <!--=======checkboxes=======-->
+
+                <h3>
+                    1. Who was the first president of the United States?
+                </h3>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="usPresident" id="johnAdams" value="John Adams">
+    John Adams 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="usPresident" id="georgeWashington" value="George Washington">
+    George Washington 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="usPresident" id="thomasJefferson" value="Thomas Jefferson">
+    Thomas Jefferson
+  </label>
+                </div>
+
+                <!--=======end of checkbox=======-->
+
+                <!--=======checkboxes and questions=======-->
+                <h3>
+                    2. Who assassinated president Abraham Lincoln?
+                </h3>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="assassinated" id="jamesEarlRay" value="James Earl Ray">
+    James Earl Ray 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="assassinated" id="leeHarveyOswald" value="Lee Harvey oswald">
+    Lee Harvey oswald 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="assassinated" id="johnWilkesBooth" value="John Wilkes Booth">
+    John Wilkes Booth<!--right-->
+  </label>
+                </div>
+
+                <!--=======end of checkbox=======-->
+
+                <!--=======checkboxes=======-->
+                <h3>
+                    3. How many U.S. Presidents have there been?
+                </h3>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="presidents" id="1944" value="44">
+    44
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="presidents" id="1945" value="45">
+    45 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="presidents" id="1946" value="46">
+    46
+  </label>
+                </div>
+
+                <!--=======end of checkbox=======-->
+
+                <!--=======checkboxes=======-->
+                <h3>
+                    4. Who is the only president to serve more than two terms?
+                </h3>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="terms" id="barackObama" value="Barack Obama">
+    Barack Obama 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="terms" id="georgeWBush" value="George W. Bush">
+    George W. Bush 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="terms" id="franklinDRoosevelt" value="Franklin D. Roosevelt">
+    Franklin D. Roosevelt
+  </label>
+                </div>
+
+                <!--=======end of checkbox=======-->
+
+                <!--=======checkboxes=======-->
+                <h3>
+                    5. Which president is on the $1,000 bill?
+                </h3>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="bill" id="groverCleveland" value="Grover Cleveland">
+    Grover Cleveland 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="bill" id="benjaminFranklin" value="Benjamin Franklin">
+    Benjamin Franklin 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="bill" id="benjaminHarris" value="Benjamin Harris">
+    Benjamin Harris
+  </label>
+                </div>
+
+                <!--=======end of checkbox=======-->
+
+                <!--=======checkboxes=======-->
+                <h3>
+                    6. How many stripes are on the American Flag?
+                </h3>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="flagStripes" id="twelve" value="12">
+    12 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="flagStripes" id="thirteen" value="13">
+    13
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="flagStripes" id="fifteen" value="15">
+    15
+  </label>
+                </div>
+
+                <!--=======end of checkbox=======-->
+
+                <!--=======checkboxes=======-->
+                <h3>
+                    7. What year was the las two dollar bill printed in the United States?
+                </h3>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="twoDollarBill" id="ninetySix" value="1996">
+    1996 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="twoDollarBill" id="twoThousand" value="2000">
+    2000
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="twoDollarBill" id="twoThousandThree" value="2003">
+    2003
+  </label>
+                </div>
+
+                <!--=======end of checkbox=======-->
+
+                <!--=======checkboxes=======-->
+                <h3>
+                    8. What year did WWII end?
+                </h3>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="wwIIend" id="forty" value=1940>
+    1940 
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="wwIIend" id="fotryThree" value=1943>
+   1943
+  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+    <input class="form-check-input" type="radio" name="wwIIend" id="fortyFive" value=1945>
+    1945
+  </label>
+                </div>
+                <br>
+                <button id="done" class="btn btn-primary">Done!</button>
+                <!--=======end of checkbox=======-->
+
+            </div>
+        </div>
+
+    </div>
+    <!--=======end of jumbotron=======-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
