@@ -21,7 +21,9 @@ body {
 #done {
     width: 150px;
 }
-
+#restart {
+    width: 150px;
+}
 #start {
     width: 200px;
     height: 60px;

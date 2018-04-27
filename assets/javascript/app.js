@@ -7,7 +7,6 @@ var intervalId;
 $(".card").hide();
 $("#jumboAnswers").hide();
 
-
 $(document).ready(function() {
 
     // questions for quiz check
@@ -114,8 +113,6 @@ $(document).ready(function() {
         }
     }
 
-
-
     function run() {
         if (intervalId !== undefined) {
             return;
@@ -177,6 +174,8 @@ $(document).ready(function() {
         $("#start").hide();
         number = 60;
     });
-
+$("#restart").on("click", function() {
+    location.reload(true);
+})
 
 }); //ready function
